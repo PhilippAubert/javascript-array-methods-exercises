@@ -10,3 +10,6 @@ Given an array of tvShows, we want to create 3 new arrays:
 
 Create this 3 arrays using the `map` method.
 `console.log` the newly created arrays to finish. Verify that they are including the correct numbers.
+
+
+
