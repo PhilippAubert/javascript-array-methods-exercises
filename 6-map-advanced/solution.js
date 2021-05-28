@@ -52,7 +52,15 @@ const movieTitles = tvShows.map((movie) => {
 console.log(movieTitles);
 
 const movieTitlesAndRatings = tvShows.map((movie) => {
-  return "Title:" + " " + movie.title + "  Rating:" + " " + movie.rating;
+  return { title: movie.title, rating: movie.rating };
 });
 
 console.log(movieTitlesAndRatings);
+
+const movieTitlesAndRatingsUp = tvShows.map((movie) => {
+  if (movie.title.length > 9) {
+    return { title: movie.title.toUpperCase(), rating: movie.rating };
+  }
+  return { title: movie.title, rating: movie.rating };
+});
+console.log(movieTitlesAndRatingsUp);
