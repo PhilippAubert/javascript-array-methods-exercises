@@ -4,7 +4,7 @@ const movies = [
   "The Lord of the Rings",
   "Avatar",
   "Brokeback Mountain",
-  "Inglorious Bastards",
+  "Inglorious Basterds",
   "The Hateful 8",
 ];
 

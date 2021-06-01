@@ -44,7 +44,7 @@ const tvShows = [
 ];
 
 const watchedTvShows = tvShows.filter((tvShow) => {
-  if (tvShow.watched === true) {
+  if (tvShow.watched) {
     return true;
   } else {
     return false;
@@ -56,9 +56,9 @@ const ratingOfShows = tvShows.filter((tvShow) => {
 });
 
 const yearOfShows = tvShows.filter((tvShow) => {
-  return tvShow.publishingYear >= 2015;
+  return tvShow.publishingYear >= 2019;
 });
 
-console.log(ratingOfShows);
 console.log(watchedTvShows);
+console.log(ratingOfShows);
 console.log(yearOfShows);

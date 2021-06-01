@@ -43,24 +43,24 @@ const tvShows = [
   },
 ];
 
-const tvShowTitle = tvShows.map((tvShow) => {
-  return tvShow.title;
-});
-
-const tvShowTitleYear = tvShows.map((tvShow) => {
-  return tvShow.title + " " + tvShow.publishingYear;
-});
-
-const tvShowTitleUpper = tvShows.map((tvShow) => {
-  if (tvShow.rating >= 9) {
-    return tvShow.title.toUpperCase();
-  } else {
-    return tvShow.title;
-  }
-});
-
-console.log(tvShowTitle);
-console.log(tvShowTitleYear);
-console.log(tvShowTitleUpper);
-
 // Your code below
+
+const movieTitles = tvShows.map((movie) => {
+  return movie.title;
+});
+
+console.log(movieTitles);
+
+const movieTitlesAndRatings = tvShows.map((movie) => {
+  return " title: " + " " + movie.title + " / " + "rating; " + movie.rating;
+});
+
+console.log(movieTitlesAndRatings);
+
+const movieTitlesAndRatingsUp = tvShows.map((movie) => {
+  if (movie.title.length > 9) {
+    return movie.title.toUpperCase();
+  }
+  return movie.title;
+});
+console.log(movieTitlesAndRatingsUp);
